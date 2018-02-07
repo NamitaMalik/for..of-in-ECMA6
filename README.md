@@ -6,13 +6,18 @@ Before we talk about **for..of** loop, let's remember our companion from ECMA5 d
 in an array/keys in case of objects.
 
 ```Javascript
-var fruits = ["Banana","Orange","Kiwi","Apple"];
-for(var index in fruits){
-console.log(index);
+var fruits = ["Banana", "Orange", "Kiwi", "Apple"];
+for (var index in fruits) {
+  console.log(index);
 }
 ```
 
-But, **for..of** loop is to loop over is to loop over values in an array or any iterable
+Output: ```0
+           1
+           2
+           3```
+
+But, **for..of** loop is to loop over values in an array or any iterable
 object for that matter.
 
 Below is the basic syntax of a **for..of** loop:
