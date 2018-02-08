@@ -97,7 +97,39 @@ Output: ```1
            3
            4```
            
+So, if we try to compare **for..in** loop with **for..of** loop, they are different in the below ways:
+
+* Using **for..in** loop, we can loop over the keys of an Object. **for..in** loop is not recommended for **Arrays** as the purpose of
+**for..in** loop is to enumerate over object properties, which means that it will also be enumerating over inherited properties which isn't always desired. Also order of iteration is not guaranteed. One of the sample is given below:
+
+    ```Javascript
+    Array.prototype.foo = 1;
+    var a = [1, 2, 3, 4];
+    for (var x in a){
+        console.log(x);
+    }
+    ```
+    Output: ```0
+            1
+            2
+            3
+            foo```
+
+    While in case of **for..of** loop, if we do:
+    ```Javacript
+    Array.prototype.foo = 1;
+    var a = [5,6,7,8];
+    for (var x of a){
+        console.log(x);
+    }
+    ```
+    we get Output : ```5
+                       6
+                       7
+                       8```
+* Using **for..of** loop, we can loop over the values of any iterable object such as String, Arrays, Collections. **for..of** loop doesn't works with plain objects because they don't have a default iterator. 
+           
 > One thing which is extremely important to note here is that the value you want to loop over should be an 
-iterable object. 
+iterable object.
 
-
+A working demo is available[here](https://repl.it/@namitamalik/SeagreenLoathsomeAustralianshelduck)
