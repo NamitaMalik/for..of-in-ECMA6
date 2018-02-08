@@ -132,4 +132,4 @@ So, if we try to compare **for..in** loop with **for..of** loop, they are differ
 > One thing which is extremely important to note here is that the value you want to loop over should be an 
 iterable object.
 
-A working demo is available [here](https://repl.it/@namitamalik/SeagreenLoathsomeAustralianshelduck)
+A working demo is available [here](https://repl.it/@namitamalik/SeagreenLoathsomeAustralianshelduck).
