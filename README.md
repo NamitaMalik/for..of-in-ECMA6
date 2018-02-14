@@ -128,6 +128,9 @@ So, if we try to compare **for..in** loop with **for..of** loop, they are differ
                        7
                        8```
 * Using **for..of** loop, we can loop over the values of any iterable object such as String, Arrays, Collections. **for..of** loop doesn't works with plain objects because they don't have a default iterator. 
+
+An important point to note about **for..in** loop is that it gives us index/keys which are of type string which cannot always be helpful. Also fixing this
+behaviour could have caused breaking changes at many other places, so that is another reason to introduce new **for..of** loop.
            
 > One thing which is extremely important to note here is that the value you want to loop over should be an 
 iterable object.
