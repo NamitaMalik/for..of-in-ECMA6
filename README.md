@@ -1,6 +1,6 @@
 # for..of loop in ECMA6
 
-In ES6, we have a **for..of** loop which loops over the iterable objects such as String, Arrays, Collections(Map, Set) etc.
+In ECMA6, we have a **for..of** loop which loops over the iterable objects such as String, Arrays, Collections(Map, Set) etc.
 
 Before we talk about **for..of** loop, let's remember our companion from ECMA5 days i.e. **for..in** loop. **for..in** loop is used to loop over the indexes
 in an array/keys in case of objects.
